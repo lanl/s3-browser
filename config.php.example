@@ -1,0 +1,41 @@
+<?php
+
+#Change values here to configure the application.
+#You MUST rename this file to config.php for app to start
+
+
+$hosts = getenv("hosts");
+if (empty($hosts)) {
+    $hosts = "example.com, example2.com";
+    #You may set hosts here or in environment. 
+    #If hosts are set in environment the values here are ignored.
+}
+$path = getenv("app_path");
+if (empty($path)) {
+    $path = "";
+    #You may set your application here or in environment. 
+    #If path is set in environment the values here are ignored.
+}
+
+$favicon = 'img/favicon.png';
+
+$endpoints = array("rgw.example.com", "s3.amazonaws.com", "storage.googleapis.com");
+
+#RGW endpoints do not take region.
+$rgwEndpoint = "rgw.example.com";
+
+#If you want to show the field for AWS Secret Key
+$showRGWaccessSecret = "false";
+
+#Email users can contact for help
+$helpEmail = "help@example.com";
+
+#CSS and JS dependencies
+
+$bootstrapCss = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />';
+
+$bootstrapJs = '<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js" integrity="sha512-PqRelaJGXVuQ81N6wjUrRQelCDR7z8RvKGiR9SbSxKHPIt15eJDmIVv9EJgwq0XvgylszsjzvQ0+VyI2WtIshQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
+
+$bootstrapIcons = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />';
+
+?>
