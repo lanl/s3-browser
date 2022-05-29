@@ -1,5 +1,6 @@
-=======
 # s3-browser
+https://www.osti.gov/biblio/1866981-s3-browser
+
 
 Web based application to manage files and buckets via the AWS S3 REST Api.
 
