@@ -1,7 +1,6 @@
-=======
 # s3-browser
 
-Web based application to manage files and buckets via the AWS S3 REST Api.
+Web based application to manage files and buckets via the AWS S3 REST Api. This was manily designed for the ceph rados gateway. It may or may not work with other endpoints. I know there are issues with Google Cloud Storage. 
 
 You can run application as is by cloning this git directory, setting config values, renaming the config file, and running composer install. You must have a webserver capable of processing php files to do this.
 

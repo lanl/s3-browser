@@ -162,7 +162,7 @@ if (PHP_VERSION_ID < 70300) {
                         <div class="col-md-6" id="amazonRegion">
                             <div class="input-group mb-2">
                                 <div class="input-group-text"><i class="bi bi-globe"></i></div>
-                                <input type="text" size="20" name="region" placeholder="Region" class="form-control" required>
+                                <input type="text" size="20" name="region" placeholder="Region (Optional)" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -264,19 +264,6 @@ if (PHP_VERSION_ID < 70300) {
             }
         }
 
-        <?php
-        if (empty($_GET['callback'])) {
-            echo "
-            function process() {
-                var form = document.getElementById('s3-login');
-                var elements = form.elements;
-                var values = [''];
-                values.push(encodeURIComponent(elements[1].name) + '=' + encodeURIComponent(elements[1].value));
-                form.action += '?' + values.join('');
-            }";
-        }
-        
-        ?>
     </script>
 
 </body>
