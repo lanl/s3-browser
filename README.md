@@ -1,4 +1,6 @@
 # s3-browser
+https://www.osti.gov/biblio/1866981-s3-browser
+
 
 Web based application to manage files and buckets via the AWS S3 REST Api. This was manily designed for the ceph rados gateway. It may or may not work with other endpoints. I know there are issues with Google Cloud Storage. 
 
